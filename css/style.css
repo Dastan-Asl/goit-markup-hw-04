@@ -347,10 +347,21 @@ footer p {
   text-align: center;
   padding: 6px 22px;
   border-radius: 4px;
+  border: none;
+  cursor: pointer;
 }
 
-.bttn a:hover,
-.bttn a:focus {
+.bttn > a {
+  font-family: "Roboto" , sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--title-text-color);
+}
+
+.bttn:hover > a,
+.bttn:focus > a {
   color: var(--white-color);
 }
 
@@ -511,7 +522,6 @@ footer p {
   align-items: center;
   width: 170px;
   height: 90px;
-  background-color: var(--second-backgroud-color);
 }
 
 .clients-link > svg {
